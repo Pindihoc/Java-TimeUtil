@@ -6,6 +6,7 @@ public class TimeUtil {
     /*
     * This method take DATETIME data return form database that has timezone at UTC/GMT
     * then convert it to client's timezone
+    * Assumed that DB is at UTC timezone
     * ZoneOffset in format: "+07:00"
     */
     public static LocalDateTime convertUtcToLocalDateTime(LocalDateTime utcDateTime, String zoneOffset){
@@ -18,6 +19,7 @@ public class TimeUtil {
     /*
     * This method take TIME data return form database that has timezone at UTC/GMT
     * then convert it to client's timezone
+    * Assumed that DB is at UTC timezone
     * ZoneOffset in format: "+07:00"
     */
     public static LocalTime convertUtcToLocalTime(LocalTime utcTime, String zoneOffset){
